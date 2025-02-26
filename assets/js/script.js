@@ -34,7 +34,7 @@ const filterItems = document.querySelectorAll("[data-filter-item]");
 const filterFunc = function (selectedValue) {
   filterItems.forEach(item => {
     // Split the categories by space (or use a comma if you prefer: .split(','))
-    const categories = item.dataset.category.split(', ');
+    const categories = item.dataset.category.split(',');
     if (selectedValue === "all" || categories.includes(selectedValue)) {
       item.classList.add("active");
     } else {
