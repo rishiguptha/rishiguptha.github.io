@@ -29,6 +29,7 @@ for (let i = 0; i < selectItems.length; i++) {
 }
 
 // Select all filter items (the project list items) and filter buttons
+//Changes
 const filterItems = document.querySelectorAll("[data-filter-item]");
 const filterBtns = document.querySelectorAll("[data-filter-btn]");
 
