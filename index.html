@@ -1,609 +1,684 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head></head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishi Guptha's Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rishi Guptha's Portfolio</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://www.flaticon.com/free-icons/personal-folder"
+      type="image/x-icon"
+    />
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="https://www.flaticon.com/free-icons/personal-folder" type="image/x-icon">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- custom css link -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- google font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- MAIN -->
-  <main>
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/profile.jpeg" alt="Rishi Guptha Mankala" width="80">
-        </figure>
-        <div class="info-content">
-          <h1 class="name" title="Rishi Guptha Mankala">Rishi Guptha <br> Mankala</h1>
-          <p class="title">Data Science Graduate Student</p>
+  <body>
+    <!-- MAIN -->
+    <main>
+      <!-- SIDEBAR -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/profile.jpeg"
+              alt="Rishi Guptha Mankala"
+              width="80"
+            />
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="Rishi Guptha Mankala">
+              Rishi Guptha<br />
+              Mankala
+            </h1>
+            <p class="title">Data Science Graduate Student</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:rishiguptha.mankala@stonybrook.edu" class="contact-link">rishiguptha.mankala@stonybrook.edu</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+19342633087" class="contact-link">+1 (934) 263-3087</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Stony Brook, NY, USA</address>
-            </div>
-          </li>
-        </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://github.com/rishiguptha" class="social-link">
-              <ion-icon name="logo-github" style="font-size: 30px"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/rishi-guptha/" class="social-link">
-              <ion-icon name="logo-Linkedin" style="font-size: 30px"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-      </div>
-    </aside>
-
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link="about">About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="resume">Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="portfolio">Projects</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="contact">Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- ABOUT -->
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        <section class="about-text">
-          <p>
-            I am a Data Science graduate student at Stony Brook University, with a strong foundation in computer science and data analytics. I enjoy solving complex problems and turning data into actionable insights.
-          </p>
-          <p>
-            My goal is to leverage my technical skills and experience to contribute to innovative projects and help organizations make data-driven decisions. I have worked on various projects ranging from political sentiment analysis to book recommendation systems, showcasing my ability to handle diverse data science tasks.
-          </p>
-        </section>
-
-        <!-- SERVICES -->
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon
-                  name="bar-chart-outline"
-                  style="
-                    font-size: 40px;
-                    background: linear-gradient(
-                      to right,
-                      hsl(45, 100%, 72%),
-                      hsl(35, 100%, 68%)
-                    );
-                  "
-                ></ion-icon>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Analysis</h4>
-
-                <p class="service-item-text">
-                  Extracting actionable insights from complex datasets to drive business decisions.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a
+                  href="mailto:rishiguptha.mankala@stonybrook.edu"
+                  class="contact-link"
+                  >rishiguptha.mankala@stonybrook.edu</a
+                >
               </div>
             </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon
-                  name="analytics"
-                  style="
-                    font-size: 40px;
-                    background: linear-gradient(
-                      to right,
-                      hsl(45, 100%, 72%),
-                      hsl(35, 100%, 68%)
-                    );
-                  "
-                ></ion-icon>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Science</h4>
-
-                <p class="service-item-text">
-                  Applying machine learning and statistical models to solve real-world problems.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+19342633087" class="contact-link"
+                  >+1 (934) 263-3087</a
+                >
               </div>
             </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon
-                  name="cube"
-                  style="
-                    font-size: 40px;
-                    background: linear-gradient(
-                      to right,
-                      hsl(45, 100%, 72%),
-                      hsl(35, 100%, 68%)
-                    );
-                  "
-                ></ion-icon>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Generative AI Solutions</h4>
-
-                <p class="service-item-text">
-                  Developing AI models to generate innovative solutions and automate processes.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon
-                  name="cog"
-                  style="
-                    font-size: 40px;
-                    background: linear-gradient(
-                      to right,
-                      hsl(45, 100%, 72%),
-                      hsl(35, 100%, 68%)
-                    );
-                  "
-                ></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Engineering</h4>
-
-                <p class="service-item-text">
-                  Expertise in building and maintaining data pipelines and architectures.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Stony Brook, NY, USA</address>
               </div>
             </li>
           </ul>
-        </section>
-        </article>
-
-      <!-- RESUME -->
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">
-            Resume
-            <a href="./assets/docs/Rishi Guptha Resume.pdf" download>
-              <ion-icon
-                name="cloud-download"
-                style="font-size: 24px; margin-left: 10px; color: #f3ca4f"
-              ></ion-icon>
-            </a>
-          </h2>
-        </header>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                Stony Brook University - SUNY
-              </h4>
-
-              <span>January 2024 - Present</span>
-              <p class="timeline-text">
-                <b>Master in Data Science</b>
-              </p>
-              <p class="timeline-text">
-                <b>Relevant Coursework: </b>Probability, Data Analysis,
-                Statistical Computing, Data Management, Big Data Systems, Large Language Models
-              </p>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/rishiguptha" class="social-link">
+                <ion-icon name="logo-github" style="font-size: 30px"></ion-icon>
+              </a>
             </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">VIT-AP University</h4>
-
-              <span>May 2023</span>
-
-              <p class="timeline-text">
-                <b>Bachelor of Technology in Computer Science, Specialization: Data Analytics </b>
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Stony Brook University</h4>
-              <p class="timeline-text">
-                <b>Graduate Student Researcher</b>
-              </p>
-              <span>Jan 2025 - Present</span>
-
-              <p class="timeline-text">
-                ● Collaborated with Professor James Glimm and a cross-functional team to develop ML models predicting S&P asset class performance, 
-                leveraging neural networks (LSTM/CNN) and entropy metrics to quantify market uncertainty.
-              </p>
-              
-                <p class="timeline-text">
-                ● Engineered financial datasets via feature extraction, normalization, and anomaly detection to train robust models for volatile market forecasting.
-              </p>
-              
-              <p class="timeline-text">
-                ● Optimized SVM classifiers as decision boundaries to categorize "good/bad" trading days, 
-                refining hyperparameters through cross-validation and backtesting strategies.
-              </p>
-              
-              <p class="timeline-text">
-                ● Presented model insights to stakeholders, bridging technical outcomes (accuracy, risk metrics) to strategic portfolio management applications.
-              </p>
-            </li>
-
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                Kimberly-Clark Corporation
-              </h4>
-              <p class="timeline-text">Software Developer</p>
-              <span>January 2023 – December 2023</span>
-
-              <p class="timeline-text">
-                ● Data Governance & Automation: Earned 7 Collibra certifications (governance, lineage, cataloging) and automated metadata tagging with Python, accelerating data discovery and boosting team productivity by 25%.
-              </p>
-              <p class="timeline-text">
-                ● Workflow Engineering: Designed 5 Python/PostgreSQL workflows in Collibra to automate validation processes, reducing manual effort by 30% and enabling real-time analytics for stakeholders.
-              </p>
-              <p class="timeline-text">
-                ● Data Migration & Integrity: Led end-to-end migration of 10,000+ data assets into Collibra’s Physical Data Dictionary via Excel ETL, achieving 100% data integrity and enhancing cross-departmental reporting efficiency.
-              </p>
-              <p class="timeline-text">
-                ● Data Quality Optimization: Partnered with BI/ML teams to resolve 15% of data inconsistencies in pipelines, improving model accuracy through schema standardization for critical interfaces.
-              </p>
-              <p class="timeline-text">
-                ● Exploratory Analysis: Conducted EDA on legacy datasets, identifying 20+ anomalies and cleanup strategies that reduced quarterly reporting errors by 18%.
-              </p>
-              <p class="timeline-text">
-                ● Stakeholder Collaboration: Built interactive Power BI dashboards to visualize Collibra metadata trends, empowering leadership to track governance KPIs and prioritize high-impact domains.
-              </p>
-            </li>
-          </ol>
-        </section>
-
-      </section>
-      <!-- Add this to your resume article, after the timeline sections
-      <section class="skill">
-        <div class="title-wrapper">
-          <div class="icon-box">
-            <ion-icon name="code-slash-outline"></ion-icon>
-          </div>
-          
-          <h3 class="h3">Skills</h3>
-        </div>
-        
-        <div class="skills-list">
-          <div class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Python</h5>
-              <data value="90">90%</data>
-            </div>
-            
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 0%; transition: width 1s ease-in-out;"></div>
-            </div>
-          </div>
-          
-          <div class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Machine Learning</h5>
-              <data value="85">85%</data>
-            </div>
-            
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 0%; transition: width 1s ease-in-out;"></div>
-            </div>
-          </div>
-          
-          <div class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">SQL & Databases</h5>
-              <data value="80">80%</data>
-            </div>
-            
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 0%; transition: width 1s ease-in-out;"></div>
-            </div>
-          </div>
-          
-          <div class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Data Visualization</h5>
-              <data value="85">85%</data>
-            </div>
-            
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 0%; transition: width 1s ease-in-out;"></div>
-            </div>
-          </div>
-          
-          <div class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Deep Learning</h5>
-              <data value="75">75%</data>
-            </div>
-            
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 0%; transition: width 1s ease-in-out;"></div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      </article>
-
-      <!-- PORTFOLIO -->
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Data Science</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Machine Learning</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Data Engineering</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Data Analysis</button>
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/rishi-guptha/" class="social-link">
+                <ion-icon name="logo-Linkedin" style="font-size: 30px"></ion-icon>
+              </a>
             </li>
           </ul>
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-select-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link="about">
+                About
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link="resume">
+                Resume
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link="portfolio">
+                Projects
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link="contact">
+                Contact
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ABOUT -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+          <section class="about-text">
+            <p>
+              I am a Data Science graduate student at Stony Brook University, with
+              a strong foundation in computer science and data analytics. I enjoy
+              solving complex problems and turning data into actionable insights.
+            </p>
+            <p>
+              My goal is to leverage my technical skills and experience to contribute
+              to innovative projects and help organizations make data-driven
+              decisions. I have worked on various projects ranging from political
+              sentiment analysis to book recommendation systems, showcasing my ability
+              to handle diverse data science tasks.
+            </p>
+          </section>
+
+          <!-- SERVICES -->
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon
+                    name="bar-chart-outline"
+                    style="font-size: 40px; background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));"
+                  ></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Data Analysis</h4>
+                  <p class="service-item-text">
+                    Extracting actionable insights from complex datasets to drive business decisions.
+                  </p>
+                </div>
               </li>
-              <li class="select-item">
-                <button data-select-item>Data Science</button>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon
+                    name="analytics"
+                    style="font-size: 40px; background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));"
+                  ></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Data Science</h4>
+                  <p class="service-item-text">
+                    Applying machine learning and statistical models to solve real-world problems.
+                  </p>
+                </div>
               </li>
-              <li class="select-item">
-                <button data-select-item>Machine Learning</button>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon
+                    name="cube"
+                    style="font-size: 40px; background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));"
+                  ></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Generative AI Solutions</h4>
+                  <p class="service-item-text">
+                    Developing AI models to generate innovative solutions and automate processes.
+                  </p>
+                </div>
               </li>
-              <li class="select-item">
-                <button data-select-item>Data Engineering</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Data Analysis</button>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon
+                    name="cog"
+                    style="font-size: 40px; background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));"
+                  ></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Data Engineering</h4>
+                  <p class="service-item-text">
+                    Expertise in building and maintaining data pipelines and architectures.
+                  </p>
+                </div>
               </li>
             </ul>
-          </div>
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="data science, data analysis">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-1.jpg" alt="Political Sentiment Analysis" loading="lazy">
-                </figure>
-                <h3 class="project-title">Political Sentiment Analysis</h3>
-                <p class="project-category">Python, Pandas, Matplotlib, TextBlob</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="machine learning, data science">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-2.jpg" alt="Hand Written Character Recognition" loading="lazy">
-                </figure>
-                <h3 class="project-title">Hand Written Character Recognition</h3>
-                <p class="project-category">Python, Keras, Tensorflow, Pandas, CNN</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="machine learning, data analysis">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-3.jpg" alt="Book Recommendation System" loading="lazy">
-                </figure>
-                <h3 class="project-title">Book Recommendation System</h3>
-                <p class="project-category">Python, KNN, Collaborative Filtering</p>
-              </a>
-            </li>
-            <!-- New projects added from resume -->
-            <li class="project-item active" data-filter-item data-category="data science, data engineering, data analysis">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-4.jpg" alt="NYC Taxi Insights" loading="lazy">
-                </figure>
-                <h3 class="project-title">NYC Taxi Insights</h3>
-                <p class="project-category">Google Cloud, Airflow, BigQuery, Looker</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="data analysis">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-5.jpg" alt="Sales Insights Dashboard" loading="lazy">
-                </figure>
-                <h3 class="project-title">Sales Insights Dashboard</h3>
-                <p class="project-category">Power BI, SQL, DAX</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="data engineering">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-6.jpg" alt="Spotify ETL Pipeline" loading="lazy">
-                </figure>
-                <h3 class="project-title">Spotify ETL Pipeline</h3>
-                <p class="project-category">AWS, Lambda, Glue, Athena</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="machine learning, data science">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-7.jpg" alt="Statistical Ensemble Learning R Package" loading="lazy">
-                </figure>
-                <h3 class="project-title">Statistical Ensemble Learning R Package</h3>
-                <p class="project-category">R, ML Models, Ensemble Learning</p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
+          </section>
+        </article>
 
-      <!-- CONTACT -->
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6600.247011052535!2d-73.12615605844297!3d40.91519910961425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e83f3aa94464a9%3A0x4bdd08ad2a55818f!2s100%20Nicolls%20Rd%2C%20Stony%20Brook%2C%20NY%2011794!5e0!3m2!1sen!2sus!4v1722388616720!5m2!1sen!2sus"
-              width="400" height="300" loading="lazy" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </figure>
-        </section>
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-          <form action="#" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+        <!-- RESUME -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">
+              Resume
+              <a href="./assets/docs/Rishi Guptha Resume.pdf" download>
+                <ion-icon
+                  name="cloud-download"
+                  style="font-size: 24px; margin-left: 10px; color: #f3ca4f"
+                ></ion-icon>
+              </a>
+            </h2>
+          </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
             </div>
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
-    </div>
-  </main>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Stony Brook University - SUNY
+                </h4>
+                <span>January 2024 - Present</span>
+                <p class="timeline-text">
+                  <b>Master in Data Science</b>
+                </p>
+                <p class="timeline-text">
+                  <b>Relevant Coursework: </b>Probability, Data Analysis, Statistical
+                  Computing, Data Management, Big Data Systems, Large Language Models
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">VIT-AP University</h4>
+                <span>May 2023</span>
+                <p class="timeline-text">
+                  <b>Bachelor of Technology in Computer Science, Specialization: Data Analytics</b>
+                </p>
+              </li>
+            </ol>
+          </section>
 
-  <!-- custom js link -->
-  <script src="./assets/js/script.js"></script>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Stony Brook University</h4>
+                <p class="timeline-text">
+                  <b>Graduate Student Researcher</b>
+                </p>
+                <span>Jan 2025 - Present</span>
+                <p class="timeline-text">
+                  ● Collaborated with Professor James Glimm and a cross-functional team to
+                  develop ML models predicting S&P asset class performance, leveraging neural
+                  networks (LSTM/CNN) and entropy metrics to quantify market uncertainty.
+                </p>
+                <p class="timeline-text">
+                  ● Engineered financial datasets via feature extraction, normalization,
+                  and anomaly detection to train robust models for volatile market forecasting.
+                </p>
+                <p class="timeline-text">
+                  ● Optimized SVM classifiers as decision boundaries to categorize "good/bad"
+                  trading days, refining hyperparameters through cross-validation and
+                  backtesting strategies.
+                </p>
+                <p class="timeline-text">
+                  ● Presented model insights to stakeholders, bridging technical outcomes
+                  (accuracy, risk metrics) to strategic portfolio management applications.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Kimberly-Clark Corporation</h4>
+                <p class="timeline-text">Software Developer</p>
+                <span>January 2023 – December 2023</span>
+                <p class="timeline-text">
+                  ● Data Governance & Automation: Earned 7 Collibra certifications (governance,
+                  lineage, cataloging) and automated metadata tagging with Python, accelerating
+                  data discovery and boosting team productivity by 25%.
+                </p>
+                <p class="timeline-text">
+                  ● Workflow Engineering: Designed 5 Python/PostgreSQL workflows in Collibra to
+                  automate validation processes, reducing manual effort by 30% and enabling
+                  real-time analytics for stakeholders.
+                </p>
+                <p class="timeline-text">
+                  ● Data Migration & Integrity: Led end-to-end migration of 10,000+ data assets
+                  into Collibra’s Physical Data Dictionary via Excel ETL, achieving 100% data
+                  integrity and enhancing cross-departmental reporting efficiency.
+                </p>
+                <p class="timeline-text">
+                  ● Data Quality Optimization: Partnered with BI/ML teams to resolve 15% of data
+                  inconsistencies in pipelines, improving model accuracy through schema standardization
+                  for critical interfaces.
+                </p>
+                <p class="timeline-text">
+                  ● Exploratory Analysis: Conducted EDA on legacy datasets, identifying 20+ anomalies
+                  and cleanup strategies that reduced quarterly reporting errors by 18%.
+                </p>
+                <p class="timeline-text">
+                  ● Stakeholder Collaboration: Built interactive Power BI dashboards to visualize
+                  Collibra metadata trends, empowering leadership to track governance KPIs and
+                  prioritize high-impact domains.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-  <!-- ionicon link -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          <!-- Uncomment the following section to enable skills
+          <section class="skill">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Skills</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 0%; transition: width 1s ease-in-out;"></div>
+                </div>
+              </div>
+              <div class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Machine Learning</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 0%; transition: width 1s ease-in-out;"></div>
+                </div>
+              </div>
+              <div class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL & Databases</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 0%; transition: width 1s ease-in-out;"></div>
+                </div>
+              </div>
+              <div class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Data Visualization</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 0%; transition: width 1s ease-in-out;"></div>
+                </div>
+              </div>
+              <div class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Deep Learning</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 0%; transition: width 1s ease-in-out;"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          -->
+        </article>
 
-  <!-- Navigation Script -->
-  <script>
-    document.querySelectorAll('.navbar-link').forEach(button => {
-      button.addEventListener('click', () => {
-        document.querySelectorAll('.navbar-link').forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-        const target = button.getAttribute('data-nav-link');
-        document.querySelectorAll('article').forEach(article => {
-          article.classList.remove('active');
-          if (article.getAttribute('data-page') === target) {
-            article.classList.add('active');
-          }
+        <!-- PORTFOLIO -->
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Data Science</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Machine Learning</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Data Engineering</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Data Analysis</button>
+              </li>
+            </ul>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Data Science</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Machine Learning</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Data Engineering</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Data Analysis</button>
+                </li>
+              </ul>
+            </div>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data science, data analysis"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="Political Sentiment Analysis"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Political Sentiment Analysis</h3>
+                  <p class="project-category">
+                    Python, Pandas, Matplotlib, TextBlob
+                  </p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="machine learning, data science"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-2.jpg"
+                      alt="Hand Written Character Recognition"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Hand Written Character Recognition</h3>
+                  <p class="project-category">
+                    Python, Keras, Tensorflow, Pandas, CNN
+                  </p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="machine learning, data analysis"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="Book Recommendation System"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Book Recommendation System</h3>
+                  <p class="project-category">
+                    Python, KNN, Collaborative Filtering
+                  </p>
+                </a>
+              </li>
+              <!-- New projects added from resume -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data science, data engineering, data analysis"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-4.jpg"
+                      alt="NYC Taxi Insights"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">NYC Taxi Insights</h3>
+                  <p class="project-category">
+                    Google Cloud, Airflow, BigQuery, Looker
+                  </p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analysis"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-5.jpg"
+                      alt="Sales Insights Dashboard"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Sales Insights Dashboard</h3>
+                  <p class="project-category">
+                    Power BI, SQL, DAX
+                  </p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data engineering"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-6.jpg"
+                      alt="Spotify ETL Pipeline"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Spotify ETL Pipeline</h3>
+                  <p class="project-category">
+                    AWS, Lambda, Glue, Athena
+                  </p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="machine learning, data science"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-7.jpg"
+                      alt="Statistical Ensemble Learning R Package"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Statistical Ensemble Learning R Package</h3>
+                  <p class="project-category">
+                    R, ML Models, Ensemble Learning
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- CONTACT -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6600.247011052535!2d-73.12615605844297!3d40.91519910961425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e83f3aa94464a9%3A0x4bdd08ad2a55818f!2s100%20Nicolls%20Rd%2C%20Stony%20Brook%2C%20NY%2011794!5e0!3m2!1sen!2sus!4v1722388616720!5m2!1sen!2sus"
+                width="400"
+                height="300"
+                loading="lazy"
+                style="border:0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </figure>
+          </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!-- custom js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Navigation Script -->
+    <script>
+      document.querySelectorAll(".navbar-link").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll(".navbar-link").forEach((btn) =>
+            btn.classList.remove("active")
+          );
+          button.classList.add("active");
+          const target = button.getAttribute("data-nav-link");
+          document.querySelectorAll("article").forEach((article) => {
+            article.classList.remove("active");
+            if (article.getAttribute("data-page") === target) {
+              article.classList.add("active");
+            }
+          });
         });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
