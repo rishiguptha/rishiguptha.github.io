@@ -1,0 +1,20 @@
+2025-02-26 14:30:04.401 [info] > git -c user.useConfigOnly=true commit --quiet [22ms]
+2025-02-26 14:30:04.401 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "guptamankala@gmail.com"
+  git config --global user.name "Rishi Guptha Mankala"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-02-26 14:30:04.406 [info] > git config --get-all user.name [4ms]
+2025-02-26 14:30:04.411 [info] > git config --get commit.template [4ms]
+2025-02-26 14:30:04.412 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2025-02-26 14:30:04.418 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2025-02-26 14:30:04.418 [info] > git status -z -uall [5ms]
+2025-02-26 14:30:19.055 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [28ms]
