@@ -13,7 +13,7 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 // Custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
@@ -28,13 +28,15 @@ for (let i = 0; i < selectItems.length; i++) {
   });
 }
 
-// Filter variables
+// Select all filter items (the project list items) and filter buttons
 const filterItems = document.querySelectorAll("[data-filter-item]");
+const filterBtns = document.querySelectorAll("[data-filter-btn]");
 
+// Function that shows/hides projects based on the selected value
 const filterFunc = function (selectedValue) {
   filterItems.forEach(item => {
-    // Split the categories by space (or use a comma if you prefer: .split(','))
-    const categories = item.dataset.category.split(',');
+    // Convert the category string to an array (ensuring lowercase for consistency)
+    const categories = item.dataset.category.toLowerCase().split(", ");
     if (selectedValue === "all" || categories.includes(selectedValue)) {
       item.classList.add("active");
     } else {
@@ -43,20 +45,24 @@ const filterFunc = function (selectedValue) {
   });
 };
 
-// Add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+// Keep track of the last clicked filter button
+let lastClickedBtn = filterBtns[0];
 
-for (let i = 0; i < filterBtn.length; i++) {
-  filterBtn[i].addEventListener("click", function () {
-    let selectedValue = this.innerText.toLowerCase();
+filterBtns.forEach(btn => {
+  btn.addEventListener("click", function () {
+    const selectedValue = this.innerText.toLowerCase();
+    // Update the select dropdown text if needed
     selectValue.innerText = this.innerText;
+    
+    // Filter projects
     filterFunc(selectedValue);
-
+    
+    // Update active class for buttons
     lastClickedBtn.classList.remove("active");
     this.classList.add("active");
     lastClickedBtn = this;
   });
-}
+});
 
 // Contact form variables
 const form = document.querySelector("[data-form]");
@@ -132,5 +138,62 @@ function setupTypingAnimation() {
   });
 }
 
+
+// Enhanced navbar functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const navbarLinks = document.querySelectorAll('.navbar-link');
+  
+  // Add active state with smooth transitions
+  navbarLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // Remove active class from all links
+      navbarLinks.forEach(item => {
+        item.classList.remove('active');
+        item.style.transition = 'all 0.3s ease';
+      });
+      
+      // Add active class to clicked link
+      this.classList.add('active');
+      
+      // Slight scale animation for feedback
+      this.style.transform = 'scale(1.1)';
+      setTimeout(() => {
+        this.style.transform = 'scale(1)';
+      }, 200);
+    });
+  });
+  
+  // Scroll spy functionality for desktop
+  function updateActiveNavOnScroll() {
+    const scrollPosition = window.scrollY;
+    
+    // Only use this for desktop where all sections are visible at once
+    if (window.innerWidth >= 1250) {
+      const sections = document.querySelectorAll('article[data-page]');
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        
+        if (scrollPosition >= sectionTop - 100 && 
+            scrollPosition < sectionTop + sectionHeight - 100) {
+          const targetNavLink = document.querySelector(
+            `.navbar-link[data-nav-link="${section.getAttribute('data-page')}"]`
+          );
+          
+          if (targetNavLink && !targetNavLink.classList.contains('active')) {
+            navbarLinks.forEach(link => link.classList.remove('active'));
+            targetNavLink.classList.add('active');
+          }
+        }
+      });
+    }
+  }
+  
+  // For larger screens where all content is visible at once
+  if (window.innerWidth >= 1250) {
+    window.addEventListener('scroll', updateActiveNavOnScroll);
+  }
+});
 // Execute when DOM is loaded
 document.addEventListener('DOMContentLoaded', setupTypingAnimation);
