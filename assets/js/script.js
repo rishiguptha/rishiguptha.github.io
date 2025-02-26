@@ -101,45 +101,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
-
-// Typing animation for the name and title
-function setupTypingAnimation() {
-  const nameElement = document.querySelector('.name');
-  const titleElement = document.querySelector('.title');
-  
-  if (!nameElement || !titleElement) return;
-  
-  const originalName = nameElement.textContent;
-  const originalTitle = titleElement.textContent;
-  
-  // Clear the text content
-  nameElement.textContent = '';
-  titleElement.textContent = '';
-  
-  // Function to animate typing
-  function typeText(element, text, speed = 100, callback = null) {
-    let i = 0;
-    
-    function typing() {
-      if (i < text.length) {
-        element.textContent += text.charAt(i);
-        i++;
-        setTimeout(typing, speed);
-      } else if (callback) {
-        setTimeout(callback, 500);
-      }
-    }
-    
-    typing();
-  }
-  
-  // Start the animation
-  typeText(nameElement, originalName, 80, () => {
-    typeText(titleElement, originalTitle, 80);
-  });
-}
-
-
+ 
 // Enhanced navbar functionality
 document.addEventListener('DOMContentLoaded', function() {
   const navbarLinks = document.querySelectorAll('.navbar-link');
