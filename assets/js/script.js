@@ -32,16 +32,16 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-  for (let i = 0; i < filterItems.length; i++) {
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+  filterItems.forEach(item => {
+    // Split the categories by space (or use a comma if you prefer: .split(','))
+    const categories = item.dataset.category.split(', ');
+    if (selectedValue === "all" || categories.includes(selectedValue)) {
+      item.classList.add("active");
     } else {
-      filterItems[i].classList.remove("active");
+      item.classList.remove("active");
     }
-  }
-}
+  });
+};
 
 // Add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
@@ -94,3 +94,43 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+// Typing animation for the name and title
+function setupTypingAnimation() {
+  const nameElement = document.querySelector('.name');
+  const titleElement = document.querySelector('.title');
+  
+  if (!nameElement || !titleElement) return;
+  
+  const originalName = nameElement.textContent;
+  const originalTitle = titleElement.textContent;
+  
+  // Clear the text content
+  nameElement.textContent = '';
+  titleElement.textContent = '';
+  
+  // Function to animate typing
+  function typeText(element, text, speed = 100, callback = null) {
+    let i = 0;
+    
+    function typing() {
+      if (i < text.length) {
+        element.textContent += text.charAt(i);
+        i++;
+        setTimeout(typing, speed);
+      } else if (callback) {
+        setTimeout(callback, 500);
+      }
+    }
+    
+    typing();
+  }
+  
+  // Start the animation
+  typeText(nameElement, originalName, 80, () => {
+    typeText(titleElement, originalTitle, 80);
+  });
+}
+
+// Execute when DOM is loaded
+document.addEventListener('DOMContentLoaded', setupTypingAnimation);

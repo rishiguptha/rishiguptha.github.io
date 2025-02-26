@@ -103,7 +103,7 @@
           </li>
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link="contact">Contact</button>
-          </li>
+          
         </ul>
       </nav>
 
@@ -348,7 +348,7 @@
       <!-- PORTFOLIO -->
       <article class="portfolio" data-page="portfolio">
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
         <section class="projects">
           <ul class="filter-list">
@@ -362,7 +362,10 @@
               <button data-filter-btn>Machine Learning</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Web Development</button>
+              <button data-filter-btn>Data Engineering</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Data Analysis</button>
             </li>
           </ul>
           <div class="filter-select-box">
@@ -383,12 +386,15 @@
                 <button data-select-item>Machine Learning</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Web Development</button>
+                <button data-select-item>Data Engineering</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Data Analysis</button>
               </li>
             </ul>
           </div>
           <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="data science">
+            <li class="project-item active" data-filter-item data-category="data science, data analysis">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -400,7 +406,7 @@
                 <p class="project-category">Python, Pandas, Matplotlib, TextBlob</p>
               </a>
             </li>
-            <li class="project-item active" data-filter-item data-category="machine learning">
+            <li class="project-item active" data-filter-item data-category="machine learning, data science">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -412,7 +418,7 @@
                 <p class="project-category">Python, Keras, Tensorflow, Pandas, CNN</p>
               </a>
             </li>
-            <li class="project-item active" data-filter-item data-category="recommendation system">
+            <li class="project-item active" data-filter-item data-category="machine learning, data analysis">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -422,6 +428,55 @@
                 </figure>
                 <h3 class="project-title">Book Recommendation System</h3>
                 <p class="project-category">Python, KNN, Collaborative Filtering</p>
+              </a>
+            </li>
+            <!-- New projects added from resume -->
+            <li class="project-item active" data-filter-item data-category="data science, data engineering, data analysis">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.jpg" alt="NYC Taxi Insights" loading="lazy">
+                </figure>
+                <h3 class="project-title">NYC Taxi Insights</h3>
+                <p class="project-category">Google Cloud, Airflow, BigQuery, Looker</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="data analysis">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.jpg" alt="Sales Insights Dashboard" loading="lazy">
+                </figure>
+                <h3 class="project-title">Sales Insights Dashboard</h3>
+                <p class="project-category">Power BI, SQL, DAX</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="data engineering">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.jpg" alt="Spotify ETL Pipeline" loading="lazy">
+                </figure>
+                <h3 class="project-title">Spotify ETL Pipeline</h3>
+                <p class="project-category">AWS, Lambda, Glue, Athena</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="machine learning, data science">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-7.jpg" alt="Statistical Ensemble Learning R Package" loading="lazy">
+                </figure>
+                <h3 class="project-title">Statistical Ensemble Learning R Package</h3>
+                <p class="project-category">R, ML Models, Ensemble Learning</p>
               </a>
             </li>
           </ul>
